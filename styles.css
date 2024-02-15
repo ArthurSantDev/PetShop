@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'sans-serif';
+    margin:0; padding:0;
+}
+
+html{
+     scroll-behavior: smooth;
+ }
+   
+body {
+    color: #263138;
+}
+
+header {
+     background-color: #FF9A6C;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-left: 80px;
+     padding-right: 80px;
+     padding-top: 24px;
+     padding-bottom: 24px;
+     position: fixed; /*Para manter o Header acompanhando o Scroll* (daqui para baixo)*/
+     top:0;
+     width: 100%;
+     z-index: 10;
+}
+   
+header nav a {
+     color: #ffffff;
+     font-weight: 600;
+     padding: 32px;
+     text-decoration: none;
+     position: relative;
+}
+   
+section img{
+     margin-top: 80px;
+}
+
+#Inicio { 
+     display: flex;
+     align-items: center;
+     gap: 32px;
+     padding: 24px, 80px, 128px, 80px; /* Topo, Direita, Baxio, Esquerda*/
+     position: relative;  /* Todos os elemetos add usaram esse como ref, seram relativos a ele*/
+}
+   
+h1,
+h2 {
+     font-weight: 600;
+     font-size: 32px;
+     margin-bottom: 32px;
+}
+   
+.paragrafo {
+     line-height: 150%;
+     margin-bottom: 32px;
+}
+   
+.botao{
+     background-color: #FF725E;
+     padding: 16px 32px;
+     border-radius: 8px;
+     color:#ffffff;
+     text-decoration: none;
+}
+   
+.botao-trans{
+     background-color: transparent;
+     padding: 16px 32px; /* Vertical, Horixontal (Sem uso de ',')*/
+     border-radius: 8px;
+     color: #FF725E;
+     text-underline-offset: 4px;
+}
+   
+.absolute{
+     position: absolute;
+     bottom: -52;
+     left: 0;
+     right: 0;
+     width: 100%;
+     z-index: -10;
+
+}
+   
+#clinica{
+     display: flex;
+     align-items: center;
+     gap: 64px;
+     padding: 64px 80px;
+}
+   
+#clinica li{
+     margin-bottom: 16px;
+     margin-left: 32px;
+}
+
+.espaço{
+     margin-top: 30px;
+}
+   
+#farmacia{
+     display: flex;
+     align-items: center;
+     gap: 64px;
+     padding: 64px 80px;
+}
+   
+#farmacia li{
+     margin-bottom: 16px;
+     margin-left: 32px;
+}
+   
+#farmacia .paragrafo{
+     border-right: 1px solid #FF725E;
+     border-bottom: 1px solid #FF725E;
+     border-left: 1px solid #FF725E;
+     border-top: 1px solid #FF725E;
+     border-radius: 8px 8px 8px 8px;
+     margin-top: -5px;
+     padding: 24px;
+}
+   
+.duvidas{
+     position: relative;
+}
+   
+#duvidas{
+     display: flex;
+     align-items: center;
+     gap: 64px;
+     padding: 64px 80px;
+}
+   
+.duvidas h3{
+     border: 2px solid #FF725E;
+     border-radius: 8px;
+     cursor: pointer;
+     padding: 24px;
+}
+   
+.duvidas img{
+     position: absolute;
+     top: 32px;
+     right: 24px;
+}
+   
+.duvidas .paragrafo{
+     border-right: 1px solid #FF725E;
+     border-bottom: 1px solid #FF725E;
+     border-left: 1px solid #FF725E;
+     border-radius: 0 0 8px 8px;
+     margin-top: -5px;
+     padding: 0 24px;
+     height: 0;
+     opacity: 0;
+     overflow: hidden;
+     transition: .2s;
+}
+   
+.duvidas.ativa .paragrafo{
+     border-right: 1px solid #FF725E;
+     border-bottom: 1px solid #FF725E;
+     border-left: 1px solid #FF725E;
+     border-radius: 0 0 8px 8px;
+     margin-top: -5px;
+     padding: 24px;
+     height: fit-content;
+     opacity: 1;
+}
+   
+footer{
+     background-color: rgba(255, 152, 108, 0.25);
+     display: flex;
+     justify-content: space-between;
+     gap: 80px;
+     padding: 25px 80px;
+}
+   
+footer img,
+footer .titulo{
+     display: block;
+     font-weight: 600;
+     margin-bottom: 20px;
+}
+   
+footer nav a{
+     color:#263138;
+     display: block;
+     margin-bottom: 16px;
+     text-decoration: none;
+}
+   
+footer p{
+     margin-bottom: 16px;
+     max-width: 350px;
+}
+   
+footer p a{
+     color:#FF725E;
+     text-decoration: none;
+}
