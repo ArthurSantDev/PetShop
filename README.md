@@ -1,1 +1,1 @@
-![c_PetLf](https://github.com/ArthurSantDev/PetShop/assets/159972613/c3e9b2b3-e3a6-4b87-82fc-fdb109ddc9b2)
+![c_PetLife](https://github.com/ArthurSantDev/PetShop/assets/159972613/c4f179c3-51ef-496e-ac3b-d4ef5f028367)
